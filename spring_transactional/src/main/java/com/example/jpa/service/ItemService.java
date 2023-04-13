@@ -5,7 +5,6 @@ import com.example.jpa.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -16,6 +15,7 @@ public class ItemService {
     /**
      * DB insert 메소드
      **/
+    @Transactional
     public void insertItem(Item item) {
         item.setStatus("CREATED");
         itemRepository.save(item);
