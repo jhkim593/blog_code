@@ -1,5 +1,9 @@
 # 작성 내용
 
+## Spring
+- [@Transactional 동작 원리](./spring_transactional)
+  
+
 ## jpa
 - [jpa 조회 성능 개선](./jpa_entity_query)
 
