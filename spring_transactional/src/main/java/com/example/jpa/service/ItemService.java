@@ -3,7 +3,6 @@ package com.example.jpa.service;
 import com.example.jpa.entity.Item;
 import com.example.jpa.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
