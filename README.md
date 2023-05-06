@@ -2,6 +2,11 @@
 
 ## Spring
 - [@Transactional 동작 원리](./spring_transactional)
+
+
+## Spring - AOP
+- [Spring AOP란](./spring_aop)
+- [@Aspect를 활용한 AOP](./spring_aop)
   
 
 ## jpa
