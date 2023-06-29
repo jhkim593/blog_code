@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config
+  kafka:
+    bootstrap-servers: 192.168.56.101:9092
+
+  cloud:
+    bus:
+      enabled: true
+
+    config:
+      server:
+        git:
+          uri: https://github.com/jhkim593/Spring-Cloud-Repository.git
+          default-label: master
+          private-key:
+          ignore-local-ssh-settings: true
+        encrypt:
+          enabled: false
+
+
+
+
+
+
