@@ -7,8 +7,10 @@
 ## Spring - AOP
 - [Spring AOP란](./spring_aop)
 - [@Aspect를 활용한 AOP](./spring_aop)
-  
 
+## Spring cloud
+- [Spring Cloud Config](./spring_cloud)
+  
 ## jpa
 - [jpa 조회 성능 개선](./jpa_entity_query)
 
