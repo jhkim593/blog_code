@@ -9,7 +9,7 @@
 - [@Aspect를 활용한 AOP](./spring_aop)
 
 ## Spring cloud
-- [Spring Cloud Config](./spring_cloud)
+- [Spring Cloud Config](./spring_cloud/cloud-config)
   
 ## jpa
 - [jpa 조회 성능 개선](./jpa_entity_query)
