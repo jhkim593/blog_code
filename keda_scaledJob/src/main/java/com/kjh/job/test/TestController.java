@@ -20,8 +20,8 @@ public class TestController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @GetMapping("/get/Status")
+    @GetMapping("/get/status")
     public ResponseEntity status(){
-        return new ResponseEntity(mqListener.getStatus(),HttpStatus.OK);
+        return new ResponseEntity(mqListener.getStatus().name(),HttpStatus.OK);
     }
 }
