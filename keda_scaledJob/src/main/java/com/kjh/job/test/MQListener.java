@@ -32,11 +32,14 @@ public class MQListener {
     }
 
     @Scheduled(fixedDelay = 5000)
-    public void getMessage() {
+    public void getMessage() throws InterruptedException {
         if(!status.equals(Status.IDLE)) return;
-        log.info("job start !");
         Object message = rabbitTemplate.receiveAndConvert(QUEUE_NAME);
         if(message == null) return;
+        log.info("job start !");
         this.setStatus(Status.ING);
+
+        Thread.sleep(15000);
+        this.setStatus(Status.COMPLETED);
     }
 }
