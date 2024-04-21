@@ -12,14 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Slf4j
 public class TestController {
     private final MQListener mqListener;
-
-    @GetMapping("/end/status")
-    public ResponseEntity endStatus(){
-        log.info("job end !");
-        mqListener.setStatus(MQListener.Status.COMPLETED);
-        return new ResponseEntity(HttpStatus.OK);
-    }
-
     @GetMapping("/get/status")
     public ResponseEntity status(){
         return new ResponseEntity(mqListener.getStatus().name(),HttpStatus.OK);
